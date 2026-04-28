@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://crkixdbjcjeys"]
+
+[ext_resource type="Texture2D" uid="uid://cm6evovjprn35" path="res://assets/backgrounds/menu_bg.png" id="1_reecx"]
+
+[node name="main_menu" type="Node2D"]
+
+[node name="menu_bg" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_reecx")
