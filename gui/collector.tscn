@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://sfn8a83seigv" path="res://assets/gui/icons_and_buttons/resources/wheat/wheat.png" id="4_hxfuu"]
 [ext_resource type="Texture2D" uid="uid://bkd0wfyryhd4" path="res://assets/gui/icons_and_buttons/products/bread/bread.png" id="5_fwila"]
 [ext_resource type="Script" uid="uid://mp0tsjrq6de2" path="res://gui/money_label.gd" id="6_a6fov"]
+[ext_resource type="Script" uid="uid://c6gifna8f01ou" path="res://gui/collectors/collectors_tab.gd" id="6_b2t6c"]
 [ext_resource type="Texture2D" uid="uid://ck1dr8411si1v" path="res://assets/gui/icons_and_buttons/products/bread/bread_pressed.png" id="6_kdqv0"]
 [ext_resource type="Script" uid="uid://bd4jypd7n0ynd" path="res://gui/collectors/resources/wheat/wheat.gd" id="6_orhmm"]
 [ext_resource type="Texture2D" uid="uid://clwpalminfhfm" path="res://assets/gui/icons_and_buttons/products/bread/bread_hover.png" id="7_1kndg"]
@@ -26,13 +27,17 @@
 [ext_resource type="Texture2D" uid="uid://dbhp054yr6jh8" path="res://assets/gui/buy_ability/buy_ability_hover.png" id="11_h03b8"]
 [ext_resource type="Texture2D" uid="uid://b6mj7aher4nmf" path="res://assets/gui/icons_and_buttons/products/brioche/brioche_pressed.png" id="11_u78wo"]
 [ext_resource type="Texture2D" uid="uid://cof5l1lgn6qlu" path="res://assets/gui/icons_and_buttons/icons/shop/open_shop_hover.png" id="11_wsmtq"]
+[ext_resource type="Script" uid="uid://b0r288tu66r5j" path="res://gui/collectors/resources/egg/egg.gd" id="12_d7vtk"]
 [ext_resource type="Texture2D" uid="uid://dyg0p1ptpqsx3" path="res://assets/gui/icons_and_buttons/products/brioche/brioche_hover.png" id="12_e70ty"]
+[ext_resource type="Texture2D" uid="uid://djs1i4yiwyjay" path="res://assets/gui/icons_and_buttons/resources/egg/egg.png" id="12_mxe8k"]
 [ext_resource type="Texture2D" uid="uid://djftxc804bbwj" path="res://assets/gui/icons_and_buttons/inside_guis/close_gui.png" id="12_str5a"]
 [ext_resource type="Texture2D" uid="uid://diswnvi631c5w" path="res://assets/gui/icons_and_buttons/inside_guis/close_gui_pressed.png" id="13_04pg3"]
+[ext_resource type="Texture2D" uid="uid://75ww0vpw5amg" path="res://assets/gui/icons_and_buttons/resources/egg/egg_pressed.png" id="13_d7vtk"]
 [ext_resource type="Texture2D" uid="uid://dq1e6h10si3hl" path="res://assets/gui/icons_and_buttons/products/brioche/brioche_disabled.png" id="13_lldga"]
 [ext_resource type="Texture2D" uid="uid://bj4pulies3fcs" path="res://assets/gui/icons_and_buttons/inside_guis/close_gui_hover.png" id="14_2hlvw"]
-[ext_resource type="Script" uid="uid://bs37m4s37g8df" path="res://gui/research/skill_tree/selling_speed.gd" id="14_8fyoy"]
 [ext_resource type="Texture2D" uid="uid://c2rjlpwqy6nv8" path="res://assets/gui/locks/locked.png" id="14_e70ty"]
+[ext_resource type="Texture2D" uid="uid://bb5rmi4yyo7fu" path="res://assets/gui/icons_and_buttons/resources/egg/egg_hover.png" id="14_mcy2x"]
+[ext_resource type="Texture2D" uid="uid://4p3ykpjfn0qa" path="res://assets/gui/icons_and_buttons/resources/egg/egg_disabled.png" id="15_26ehx"]
 [ext_resource type="Texture2D" uid="uid://do8xaruxrae44" path="res://assets/gui/locks/locked_pressed.png" id="15_u6mgh"]
 [ext_resource type="Texture2D" uid="uid://dbi8fcraqqy58" path="res://assets/gui/locks/locked_hover.png" id="16_vbd5i"]
 [ext_resource type="Script" uid="uid://dhai2ph55qhj1" path="res://scripts/general/texture_button_wiggle.gd" id="17_vbd5i"]
@@ -45,12 +50,15 @@
 [ext_resource type="Texture2D" uid="uid://di7uhsp8k8sc2" path="res://assets/gui/icons_and_buttons/selling/progress_bar/over.png" id="26_5bagh"]
 [ext_resource type="Texture2D" uid="uid://bf824lsx1kwsi" path="res://assets/gui/icons_and_buttons/icons/research/research_hover.png" id="26_nk50j"]
 [ext_resource type="Texture2D" uid="uid://dimyi3r4gsrya" path="res://assets/gui/icons_and_buttons/selling/progress_bar/progress.png" id="27_idouy"]
-[ext_resource type="Script" uid="uid://bo3od2mq5dux" path="res://gui/research/skill_tree/production.gd" id="28_ukxc5"]
 [ext_resource type="Texture2D" uid="uid://c5gr5g4auh3ax" path="res://assets/gui/icons_and_buttons/icons/shop/open_shop_disabled.png" id="34_a60p4"]
 [ext_resource type="Texture2D" uid="uid://bory6do14bq67" path="res://assets/gui/icons_and_buttons/icons/skill_tree/power_upgrade_1/power_upgrade_1.png" id="36_5iyhx"]
 [ext_resource type="Texture2D" uid="uid://be0qxcq25uf0m" path="res://assets/gui/icons_and_buttons/icons/skill_tree/power_upgrade_1/power_upgrade_1_pressed.png" id="37_0xyco"]
+[ext_resource type="Script" uid="uid://byhssoys7ljfk" path="res://gui/shop/scripts/brioche/sell_brioche.gd" id="37_mcy2x"]
 [ext_resource type="Texture2D" uid="uid://cnogi6pgw2pc4" path="res://assets/gui/icons_and_buttons/icons/skill_tree/power_upgrade_1/power_upgrade_1_hover.png" id="38_5bagh"]
+[ext_resource type="Texture2D" uid="uid://6l0jv2aegqqr" path="res://assets/gui/icons_and_buttons/selling/sell_brioche/sell_brioche.png" id="38_qgq5v"]
+[ext_resource type="Texture2D" uid="uid://c3nd5fr2vuuvl" path="res://assets/gui/icons_and_buttons/selling/sell_brioche/sell_brioche_pressed.png" id="39_6x5xr"]
 [ext_resource type="Texture2D" uid="uid://sxubolp6p81d" path="res://assets/gui/icons_and_buttons/frames/icon_frame.png" id="40_5iyhx"]
+[ext_resource type="Texture2D" uid="uid://cyivpwsoi625o" path="res://assets/gui/icons_and_buttons/selling/sell_brioche/sell_brioche_hover.png" id="40_m62c1"]
 [ext_resource type="Script" uid="uid://jponibqrvwbs" path="res://gui/money_gained.gd" id="40_rj14x"]
 [ext_resource type="Script" uid="uid://b4uycdpddxsr8" path="res://gui/research/skill_tree/artesanal_bread.gd" id="40_tv6ir"]
 [ext_resource type="Script" uid="uid://b7wur48p656d" path="res://admin/admin.gd" id="41_g3013"]
@@ -58,8 +66,19 @@
 [ext_resource type="Texture2D" uid="uid://xc15smvqepsf" path="res://assets/gui/icons_and_buttons/icons/skill_tree/artesanal_bread_upgrade/artesanal_bread_upgrade.png" id="41_i45a3"]
 [ext_resource type="Texture2D" uid="uid://cg6rkl4al37dw" path="res://assets/gui/icons_and_buttons/icons/skill_tree/artesanal_bread_upgrade/artesanal_bread_upgrade_pressed.png" id="42_tv6ir"]
 [ext_resource type="Texture2D" uid="uid://daarkcn3wsw7a" path="res://assets/gui/icons_and_buttons/icons/skill_tree/artesanal_bread_upgrade/artesanal_bread_upgrade_hover.png" id="43_6jw53"]
+[ext_resource type="Texture2D" uid="uid://cxe0eesdrwj31" path="res://assets/gui/icons_and_buttons/icons/skill_tree/capacity_1/capacity_upgrade_1.png" id="44_b2t6c"]
+[ext_resource type="Script" uid="uid://bm2xqs7lsyrc0" path="res://scripts/general/research_boxcontainer.gd" id="44_mohbc"]
+[ext_resource type="Script" uid="uid://80xrche7buu" path="res://gui/research/skill_tree/capacity_1.gd" id="44_rhd4k"]
+[ext_resource type="Texture2D" uid="uid://b46us2hqnah6u" path="res://assets/gui/icons_and_buttons/icons/skill_tree/capacity_1/capacity_upgrade_1_pressed.png" id="45_rhd4k"]
+[ext_resource type="Texture2D" uid="uid://wsyytdqbkqmc" path="res://assets/gui/icons_and_buttons/icons/skill_tree/capacity_1/capacity_upgrade_1_hover.png" id="46_w1qe3"]
+[ext_resource type="Script" uid="uid://o7fwcs6s2pae" path="res://gui/research/skill_tree/automatic_bread.gd" id="54_8b1hn"]
+[ext_resource type="Texture2D" uid="uid://gd5ky7qdgbqd" path="res://assets/gui/icons_and_buttons/icons/skill_tree/automatic_bread_upgrade/automatic_bread_upgrade.png" id="55_hdfd5"]
 [ext_resource type="Script" uid="uid://bjp8veu6f3fch" path="res://som.gd" id="55_idouy"]
 [ext_resource type="Script" uid="uid://dhy8xwrtpq3fk" path="res://sfx.gd" id="56_4aqxy"]
+[ext_resource type="Script" uid="uid://ccuykhq31f2jo" path="res://gui/research/skill_tree/capacity_2.gd" id="56_hdfd5"]
+[ext_resource type="Texture2D" uid="uid://cj8b4sourqeb3" path="res://assets/gui/icons_and_buttons/icons/skill_tree/automatic_bread_upgrade/automatic_bread_pressed_upgrade.png" id="56_mohbc"]
+[ext_resource type="Texture2D" uid="uid://b5gidgo5hrjme" path="res://assets/gui/icons_and_buttons/icons/skill_tree/automatic_bread_upgrade/automatic_bread_hover_upgrade.png" id="57_wrhpf"]
+[ext_resource type="Script" uid="uid://tiqph30qm80w" path="res://gui/resources_qty.gd" id="61_6jw53"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vbd5i"]
 
@@ -85,6 +104,20 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_orhmm"]
 bg_color = Color(1, 1, 1, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7vtk"]
+bg_color = Color(0.93918455, 0.9504877, 0.7284484, 1)
 border_width_left = 8
 border_width_top = 8
 border_width_right = 8
@@ -124,63 +157,6 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 shadow_size = 7
-
-[sub_resource type="Animation" id="Animation_1xtrm"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("collectors_tab/bakery/brioche/locked:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(30, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("collectors_tab/bakery/brioche/locked:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(3, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="Animation" id="Animation_vbd5i"]
-resource_name = "locked"
-length = 0.7
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("collectors_tab/bakery/brioche/locked:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(20, -0.25, 0, 0.25, 0, 28, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0.25, 0, 28, -0.25, 0, 0.25, 0, 20, -0.25, 0, 0.25, 0, 28, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0.25, 0, 28, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("collectors_tab/bakery/brioche/locked:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ekb8d"]
-_data = {
-&"RESET": SubResource("Animation_1xtrm"),
-&"locked": SubResource("Animation_vbd5i")
-}
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekb8d"]
 bg_color = Color(0, 0, 0, 0.878431)
@@ -836,16 +812,86 @@ _data = {
 texture_filter = 1
 script = ExtResource("1_6cl5t")
 
+[node name="resources_qty" type="Node2D" parent="." unique_id=2098759942]
+script = ExtResource("61_6jw53")
+
+[node name="resources_bg" type="ColorRect" parent="resources_qty" unique_id=585832548]
+z_index = -20
+offset_top = 452.0
+offset_right = 1280.0
+offset_bottom = 521.0
+color = Color(0.08468992, 0.08468992, 0.08468992, 1)
+script = ExtResource("3_g0gqb")
+
+[node name="box" type="BoxContainer" parent="resources_qty" unique_id=1211311457]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("19_ekb8d")
+
+[node name="wheat" type="Sprite2D" parent="resources_qty/box" unique_id=1962769734]
+position = Vector2(41, 478)
+scale = Vector2(1.2734376, 1.2734376)
+texture = ExtResource("4_hxfuu")
+
+[node name="qty" type="Label" parent="resources_qty/box/wheat" unique_id=1672524072]
+texture_filter = 1
+offset_left = -16.0
+offset_top = 14.920248
+offset_right = 16.0
+offset_bottom = 31.920248
+tooltip_text = "Quantos pães você tem.
+R$1 cada."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="egg" type="Sprite2D" parent="resources_qty/box" unique_id=96641651]
+position = Vector2(86, 477)
+scale = Vector2(1.3125, 1.3125)
+texture = ExtResource("12_mxe8k")
+
+[node name="qty" type="Label" parent="resources_qty/box/egg" unique_id=1352566118]
+texture_filter = 1
+offset_left = -15.238095
+offset_top = 15.517857
+offset_right = 16.761906
+offset_bottom = 32.517857
+tooltip_text = "Quantos pães você tem.
+R$1 cada."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="main_bg" type="Sprite2D" parent="." unique_id=214931994]
 z_index = -999
 position = Vector2(640, 360)
 texture = ExtResource("8_je48w")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1566037010]
+[node name="bg" type="ColorRect" parent="." unique_id=1987345534]
+z_index = -4096
+offset_left = -18706.0
+offset_top = -12468.0
+offset_right = 41932.0
+offset_bottom = 35950.0
+color = Color(0, 0, 0, 1)
+
+[node name="icons_bg" type="ColorRect" parent="." unique_id=1566037010]
 z_index = -2
 offset_top = 520.0
 offset_right = 1280.0
-offset_bottom = 728.0
+offset_bottom = 738.0
 color = Color(0, 0, 0, 1)
 script = ExtResource("3_g0gqb")
 
@@ -866,9 +912,11 @@ tab_0/title = "recursos"
 tab_0/icon = ExtResource("4_hxfuu")
 tab_1/title = "padaria"
 tab_1/icon = ExtResource("5_fwila")
+script = ExtResource("6_b2t6c")
 
 [node name="resources" type="BoxContainer" parent="collectors_tab" unique_id=726528966]
 layout_mode = 2
+script = ExtResource("4_1xtrm")
 metadata/_tab_index = 0
 metadata/_tab_name = "recursos"
 
@@ -881,7 +929,7 @@ offset_left = 52.0
 offset_top = -7.0
 offset_right = 145.0
 offset_bottom = 49.0
-tooltip_text = "Farinha de trigo.
+tooltip_text = "Farinha de trigo - Básico
 Usada em muitas receitas de
 massas, biscoitos, bolos e mais."
 mouse_filter = 1
@@ -920,21 +968,98 @@ show_percentage = false
 
 [node name="label" type="Label" parent="collectors_tab/resources/wheat" unique_id=1476173901]
 texture_filter = 1
-offset_left = 69.0
+offset_left = 54.0
 offset_top = 149.0
-offset_right = 124.0
+offset_right = 141.0
 offset_bottom = 205.0
-tooltip_text = "Quantos pães você tem.
-R$1 cada."
+tooltip_text = "Quanta farinha você tem."
 mouse_filter = 1
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 25
-text = "0/50"
+text = "📦 0/10"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="egg" type="Node2D" parent="collectors_tab/resources" unique_id=1605640457]
+position = Vector2(190, 0)
+script = ExtResource("12_d7vtk")
+
+[node name="egg" type="Label" parent="collectors_tab/resources/egg" unique_id=1441595845]
+texture_filter = 1
+offset_left = 51.0
+offset_top = -7.0
+offset_right = 144.0
+offset_bottom = 49.0
+tooltip_text = "Ovo - Básico
+Usada em muitas receitas de
+massas, biscoitos, bolos e mais."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "Ovo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="collect" type="TextureButton" parent="collectors_tab/resources/egg" unique_id=678147597]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 160.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_mxe8k")
+texture_pressed = ExtResource("13_d7vtk")
+texture_hover = ExtResource("14_mcy2x")
+texture_disabled = ExtResource("15_26ehx")
+stretch_mode = 0
+
+[node name="progressbar" type="ProgressBar" parent="collectors_tab/resources/egg" unique_id=2078937797]
+offset_left = 170.0
+offset_top = 32.0
+offset_right = 206.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_3ih0h")
+theme_override_styles/fill = SubResource("StyleBoxFlat_d7vtk")
+fill_mode = 3
+show_percentage = false
+
+[node name="label" type="Label" parent="collectors_tab/resources/egg" unique_id=1386239605]
+texture_filter = 1
+offset_left = 50.0
+offset_top = 149.0
+offset_right = 146.0
+offset_bottom = 205.0
+tooltip_text = "Quantos ovos você tem."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "📦 0/20"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="locked" type="TextureButton" parent="collectors_tab/resources/egg" unique_id=1202689810]
+offset_left = 30.0
+offset_top = 3.0
+offset_right = 206.0
+offset_bottom = 188.0
+tooltip_text = "Requisitos:
+-⚡Poder Maquinário: 110%"
+mouse_default_cursor_shape = 16
+texture_normal = ExtResource("14_e70ty")
+texture_pressed = ExtResource("15_u6mgh")
+texture_hover = ExtResource("16_vbd5i")
+stretch_mode = 0
+script = ExtResource("17_vbd5i")
 
 [node name="bakery" type="BoxContainer" parent="collectors_tab" unique_id=294431087]
 visible = false
@@ -948,11 +1073,12 @@ script = ExtResource("1_lu7m7")
 
 [node name="bread" type="Label" parent="collectors_tab/bakery/bread" unique_id=745230879]
 texture_filter = 1
-offset_left = 70.0
+offset_left = 55.0
 offset_top = -7.0
-offset_right = 122.0
+offset_right = 139.0
 offset_bottom = 49.0
-tooltip_text = "Pães de sal feitos na hora.
+tooltip_text = "Pão - Básico
+Pães de sal feitos na hora.
 Quentinhos!"
 mouse_filter = 1
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -960,7 +1086,7 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 25
-text = "pão"
+text = "🍞 pão"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -990,9 +1116,9 @@ show_percentage = false
 
 [node name="label" type="Label" parent="collectors_tab/bakery/bread" unique_id=1275182881]
 texture_filter = 1
-offset_left = 79.0
+offset_left = 64.0
 offset_top = 149.0
-offset_right = 111.0
+offset_right = 119.0
 offset_bottom = 205.0
 tooltip_text = "Quantos pães você tem.
 R$1 cada."
@@ -1002,9 +1128,13 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 25
-text = "0"
+text = "📦 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="timer" type="Timer" parent="collectors_tab/bakery/bread" unique_id=1284740761]
+wait_time = 3.0
+one_shot = true
 
 [node name="brioche" type="Node2D" parent="collectors_tab/bakery" unique_id=2026901189]
 position = Vector2(224, 6)
@@ -1013,9 +1143,9 @@ script = ExtResource("7_bj0s2")
 [node name="brioche" type="Label" parent="collectors_tab/bakery/brioche" unique_id=1197404802]
 texture_filter = 1
 offset_left = 50.0
-offset_top = -6.0
+offset_top = -13.0
 offset_right = 143.0
-offset_bottom = 50.0
+offset_bottom = 43.0
 tooltip_text = "Brioches são pães franceses com
 alto teor de manteiga e ovo."
 mouse_filter = 1
@@ -1053,40 +1183,35 @@ show_percentage = false
 
 [node name="label" type="Label" parent="collectors_tab/bakery/brioche" unique_id=2006025336]
 texture_filter = 1
-offset_left = 79.0
+offset_left = 70.0
 offset_top = 149.0
-offset_right = 111.0
+offset_right = 125.0
 offset_bottom = 205.0
 tooltip_text = "Quantos brioches você tem.
-R$2 cada."
+R$3 cada."
 mouse_filter = 1
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 25
-text = "0"
+text = "📦 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="locked" type="TextureButton" parent="collectors_tab/bakery/brioche" unique_id=1825605726]
+[node name="locked" type="TextureButton" parent="collectors_tab/bakery/brioche" unique_id=121857565]
 offset_left = 30.0
 offset_top = 3.0
 offset_right = 206.0
 offset_bottom = 188.0
 tooltip_text = "Requisitos:
-- Poder Maquinário: 1.1"
+- Poder Maquinário: 110%"
 mouse_default_cursor_shape = 16
 texture_normal = ExtResource("14_e70ty")
 texture_pressed = ExtResource("15_u6mgh")
 texture_hover = ExtResource("16_vbd5i")
 stretch_mode = 0
 script = ExtResource("17_vbd5i")
-
-[node name="locker" type="AnimationPlayer" parent="collectors_tab/bakery/brioche" unique_id=551471818]
-root_node = NodePath("../../../..")
-libraries/ = SubResource("AnimationLibrary_ekb8d")
-speed_scale = 2.0
 
 [node name="shop_gui" type="Node2D" parent="." unique_id=1799315409]
 position = Vector2(0, 720)
@@ -1164,6 +1289,49 @@ offset_left = -11.0
 offset_top = 132.0
 offset_right = 140.0
 offset_bottom = 159.0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sell_brioche" type="Node2D" parent="shop_gui/shop_tab/sell" unique_id=1181119180]
+position = Vector2(234, 50)
+script = ExtResource("37_mcy2x")
+
+[node name="progressbar" type="TextureProgressBar" parent="shop_gui/shop_tab/sell/sell_brioche" unique_id=698788784]
+visible = false
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 148.0
+offset_bottom = 148.0
+fill_mode = 4
+nine_patch_stretch = true
+texture_under = ExtResource("26_5bagh")
+texture_progress = ExtResource("27_idouy")
+
+[node name="sell_button" type="TextureButton" parent="shop_gui/shop_tab/sell/sell_brioche" unique_id=340993268]
+offset_right = 128.0
+offset_bottom = 128.0
+tooltip_text = "Clique para vender os brioches
+no estoque."
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("38_qgq5v")
+texture_pressed = ExtResource("39_6x5xr")
+texture_hover = ExtResource("40_m62c1")
+stretch_mode = 0
+
+[node name="label" type="Label" parent="shop_gui/shop_tab/sell/sell_brioche" unique_id=792494304]
+texture_filter = 1
+offset_left = -11.0
+offset_top = -24.0
+offset_right = 140.0
+offset_bottom = 23.0
 tooltip_text = "Pães de sal feitos na hora.
 Quentinhos!"
 mouse_filter = 1
@@ -1171,8 +1339,25 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "vender
+brioches"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="qty" type="Label" parent="shop_gui/shop_tab/sell/sell_brioche" unique_id=102042278]
+texture_filter = 1
+offset_left = -11.0
+offset_top = 132.0
+offset_right = 140.0
+offset_bottom = 159.0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 25
-text = "vender pães"
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1183,8 +1368,8 @@ position = Vector2(0, 720)
 [node name="research_tab" type="TabContainer" parent="research_gui" unique_id=1104706081]
 show_behind_parent = true
 z_index = 1
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_right = 20639.0
+offset_bottom = 14938.0
 theme_override_constants/side_margin = 0
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 35
@@ -1194,148 +1379,25 @@ current_tab = 0
 drag_to_rearrange_enabled = true
 tab_focus_mode = 0
 tab_0/title = "pesquisar"
+tab_0/icon = ExtResource("24_1ajl5")
 
 [node name="research" type="BoxContainer" parent="research_gui/research_tab" unique_id=1675782483]
 layout_mode = 2
-script = ExtResource("4_1xtrm")
+script = ExtResource("44_mohbc")
 metadata/_tab_index = 0
 metadata/_tab_name = "pesquisar"
 
-[node name="power" type="Node2D" parent="research_gui/research_tab/research" unique_id=1204855205]
-position = Vector2(-1, 98)
-script = ExtResource("8_6xat8")
+[node name="lines" type="Node2D" parent="research_gui/research_tab/research" unique_id=310307132]
+position = Vector2(3498, 4089)
 
-[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/power" unique_id=1551827396]
-offset_left = 601.0
-offset_top = 460.0
-offset_right = 665.0
-offset_bottom = 524.0
-scale = Vector2(1.2499993, 1.2499993)
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("36_5iyhx")
-texture_pressed = ExtResource("37_0xyco")
-texture_hover = ExtResource("38_5bagh")
-
-[node name="attribute" type="Label" parent="research_gui/research_tab/research/power" unique_id=190633208]
-texture_filter = 1
-offset_left = 591.0
-offset_top = 442.0
-offset_right = 687.0
-offset_bottom = 469.0
-tooltip_text = "O quão rápido você prepara as coisas ou obtem recursos.
-Algumas receitas podem exigir um nível mais alto."
-mouse_filter = 1
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/shadow_outline_size = 2
-theme_override_font_sizes/font_size = 25
-text = "+Poder I"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="level" type="Label" parent="research_gui/research_tab/research/power" unique_id=429525037]
-texture_filter = 1
-offset_left = 574.0
-offset_top = 525.0
-offset_right = 715.0
-offset_bottom = 581.0
-tooltip_text = "O quão rápido você prepara as coisas ou obtem recursos.
-Algumas receitas podem exigir um nível mais alto."
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/shadow_outline_size = 2
-theme_override_font_sizes/font_size = 25
-text = "+100.0/200%"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="selling_speed" type="Node2D" parent="research_gui/research_tab/research" unique_id=1821495063]
-position = Vector2(-550, -491)
-script = ExtResource("14_8fyoy")
-
-[node name="attribute" type="Label" parent="research_gui/research_tab/research/selling_speed" unique_id=1594685553]
-texture_filter = 1
-offset_left = 600.0
-offset_top = 548.0
-offset_right = 746.0
-offset_bottom = 581.0
-tooltip_text = "Mais agentes de tráfego geram mais vendas.
-Aumenta a velocidade "
-mouse_filter = 1
-theme_override_font_sizes/font_size = 30
-text = "marketing:"
-
-[node name="level" type="Label" parent="research_gui/research_tab/research/selling_speed" unique_id=147152020]
-texture_filter = 1
-offset_left = 758.0
-offset_top = 549.0
-offset_right = 880.0
-offset_bottom = 582.0
-tooltip_text = "Seu nível atual de marketing.
-Bom trabalho!"
-mouse_filter = 1
-theme_override_font_sizes/font_size = 30
-text = "1"
-
-[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/selling_speed" unique_id=1858078333]
-offset_left = 566.0
-offset_top = 548.0
-offset_right = 598.0
-offset_bottom = 580.0
-tooltip_text = "$10"
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("9_ndffx")
-texture_pressed = ExtResource("10_cel2d")
-texture_hover = ExtResource("11_h03b8")
-
-[node name="production" type="Node2D" parent="research_gui/research_tab/research" unique_id=2012464794]
-position = Vector2(-550, -451)
-script = ExtResource("28_ukxc5")
-
-[node name="attribute" type="Label" parent="research_gui/research_tab/research/production" unique_id=2031102792]
-texture_filter = 1
-offset_left = 600.0
-offset_top = 548.0
-offset_right = 746.0
-offset_bottom = 581.0
-tooltip_text = "Quantos itens você pode produzir no máximo.
-Quanto mais melhor!"
-mouse_filter = 1
-theme_override_font_sizes/font_size = 30
-text = "Capacidade de produção:"
-
-[node name="level" type="Label" parent="research_gui/research_tab/research/production" unique_id=693372541]
-texture_filter = 1
-offset_left = 962.0
-offset_top = 549.0
-offset_right = 1084.0
-offset_bottom = 582.0
-tooltip_text = "Seu nível atual de capacidade de produção.
-Bom trabalho!"
-mouse_filter = 1
-theme_override_font_sizes/font_size = 30
-text = "1"
-
-[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/production" unique_id=1006355190]
-offset_left = 566.0
-offset_top = 548.0
-offset_right = 598.0
-offset_bottom = 580.0
-tooltip_text = "$10"
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("9_ndffx")
-texture_pressed = ExtResource("10_cel2d")
-texture_hover = ExtResource("11_h03b8")
+[node name="artesanal_bread" type="Line2D" parent="research_gui/research_tab/research/lines" unique_id=1758373599]
+position = Vector2(872, 152)
+points = PackedVector2Array(275, 349, 275, 367, 89, 367, 89, 331, 88.999985, 374.2999, 89, 408)
+width = 5.0
+default_color = Color(2.0608642, 2.0608642, 2.0608642, 1)
 
 [node name="artesanal_bread" type="Node2D" parent="research_gui/research_tab/research" unique_id=1423749201]
-position = Vector2(-320, 98)
+position = Vector2(3178, 4187)
 script = ExtResource("40_tv6ir")
 
 [node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/artesanal_bread" unique_id=1472091533]
@@ -1352,9 +1414,9 @@ texture_hover = ExtResource("43_6jw53")
 
 [node name="attribute" type="Label" parent="research_gui/research_tab/research/artesanal_bread" unique_id=897190843]
 texture_filter = 1
-offset_left = 590.0
+offset_left = 567.0
 offset_top = 426.0
-offset_right = 695.0
+offset_right = 704.0
 offset_bottom = 473.0
 tooltip_text = "O quão rápido você prepara as coisas ou obtem recursos.
 Algumas receitas podem exigir um nível mais alto."
@@ -1365,11 +1427,11 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 20
 text = "Pão
-Artesanal"
+Artesanal 🍞"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="unlocked" type="Label" parent="research_gui/research_tab/research/artesanal_bread" unique_id=628529783]
+[node name="level" type="Label" parent="research_gui/research_tab/research/artesanal_bread" unique_id=628529783]
 visible = false
 texture_filter = 1
 offset_left = 589.0
@@ -1388,6 +1450,265 @@ theme_override_font_sizes/font_size = 15
 text = "desbloqueado!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="power_1" type="Node2D" parent="research_gui/research_tab/research" unique_id=1204855205]
+position = Vector2(3497, 4187)
+script = ExtResource("8_6xat8")
+
+[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/power_1" unique_id=1551827396]
+offset_left = 601.0
+offset_top = 460.0
+offset_right = 665.0
+offset_bottom = 524.0
+scale = Vector2(1.2499993, 1.2499993)
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("36_5iyhx")
+texture_pressed = ExtResource("37_0xyco")
+texture_hover = ExtResource("38_5bagh")
+
+[node name="attribute" type="Label" parent="research_gui/research_tab/research/power_1" unique_id=190633208]
+texture_filter = 1
+offset_left = 570.0
+offset_top = 442.0
+offset_right = 705.0
+offset_bottom = 469.0
+tooltip_text = "O quão rápido você prepara as coisas ou obtem recursos.
+Algumas receitas podem exigir um nível mais alto."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "+Poder I"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level" type="Label" parent="research_gui/research_tab/research/power_1" unique_id=429525037]
+texture_filter = 1
+offset_left = 550.0
+offset_top = 524.0
+offset_right = 715.0
+offset_bottom = 580.0
+tooltip_text = "O quão rápido você prepara as coisas ou obtem recursos.
+Algumas receitas podem exigir um nível mais alto."
+mouse_filter = 1
+mouse_default_cursor_shape = 16
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "⚡+100.0/150%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="capacity_1" type="Node2D" parent="research_gui/research_tab/research" unique_id=1131751483]
+position = Vector2(3818, 4187)
+script = ExtResource("44_rhd4k")
+
+[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/capacity_1" unique_id=1044740347]
+offset_left = 601.0
+offset_top = 460.0
+offset_right = 665.0
+offset_bottom = 524.0
+scale = Vector2(1.2499993, 1.2499993)
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("44_b2t6c")
+texture_pressed = ExtResource("45_rhd4k")
+texture_hover = ExtResource("46_w1qe3")
+
+[node name="attribute" type="Label" parent="research_gui/research_tab/research/capacity_1" unique_id=2114343537]
+texture_filter = 1
+offset_left = 587.0
+offset_top = 431.0
+offset_right = 693.0
+offset_bottom = 474.0
+tooltip_text = "A quantidade de recursos básicos,
+como farinha e ovos que você
+pode armazenar no máximo."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 18
+text = "+Capacidade
+Básica I"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level" type="Label" parent="research_gui/research_tab/research/capacity_1" unique_id=2111685481]
+texture_filter = 1
+offset_left = 585.0
+offset_top = 538.0
+offset_right = 686.0
+offset_bottom = 565.0
+tooltip_text = "A quantidade de recursos básicos,
+como farinha e ovos que você
+pode armazenar no máximo."
+mouse_filter = 1
+mouse_default_cursor_shape = 16
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "📦 10/50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="capacity_2" type="Node2D" parent="research_gui/research_tab/research" unique_id=327328914]
+position = Vector2(3818, 4033)
+script = ExtResource("56_hdfd5")
+
+[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/capacity_2" unique_id=1570730642]
+offset_left = 601.0
+offset_top = 460.0
+offset_right = 665.0
+offset_bottom = 524.0
+scale = Vector2(1.2499993, 1.2499993)
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("44_b2t6c")
+texture_pressed = ExtResource("45_rhd4k")
+texture_hover = ExtResource("46_w1qe3")
+
+[node name="attribute" type="Label" parent="research_gui/research_tab/research/capacity_2" unique_id=2121833957]
+texture_filter = 1
+offset_left = 587.0
+offset_top = 424.0
+offset_right = 693.0
+offset_bottom = 467.0
+tooltip_text = "A quantidade de recursos básicos,
+como farinha e ovos que você
+pode armazenar no máximo."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 18
+text = "+Capacidade
+Básica II"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level" type="Label" parent="research_gui/research_tab/research/capacity_2" unique_id=378013242]
+texture_filter = 1
+offset_left = 578.0
+offset_top = 538.0
+offset_right = 694.0
+offset_bottom = 565.0
+tooltip_text = "A quantidade de recursos básicos,
+como farinha e ovos que você
+pode armazenar no máximo."
+mouse_filter = 1
+mouse_default_cursor_shape = 16
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "📦 50/150"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="locked" type="TextureButton" parent="research_gui/research_tab/research/capacity_2" unique_id=1785194171]
+offset_left = 580.0
+offset_top = 436.0
+offset_right = 700.0
+offset_bottom = 562.13635
+tooltip_text = "Requisitos:
+- 📦Capacidade Básica: >=30"
+mouse_default_cursor_shape = 16
+texture_normal = ExtResource("14_e70ty")
+texture_pressed = ExtResource("15_u6mgh")
+texture_hover = ExtResource("16_vbd5i")
+stretch_mode = 0
+script = ExtResource("17_vbd5i")
+
+[node name="automatic_bread" type="Node2D" parent="research_gui/research_tab/research" unique_id=1113429872]
+position = Vector2(4004, 4060)
+script = ExtResource("54_8b1hn")
+
+[node name="upgrade" type="TextureButton" parent="research_gui/research_tab/research/automatic_bread" unique_id=654255983]
+offset_left = 599.0
+offset_top = 445.0
+offset_right = 668.60004
+offset_bottom = 514.60004
+scale = Vector2(1.2499993, 1.2499993)
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("55_hdfd5")
+texture_pressed = ExtResource("56_mohbc")
+texture_hover = ExtResource("57_wrhpf")
+stretch_mode = 0
+
+[node name="attribute" type="Label" parent="research_gui/research_tab/research/automatic_bread" unique_id=1980430406]
+texture_filter = 1
+offset_left = 575.0
+offset_top = 401.0
+offset_right = 704.0
+offset_bottom = 444.0
+tooltip_text = "Permite fazer pães de forma automática.
+Tenta fazer um pão a cada 3 segundos."
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 18
+text = "+Pão
+automático ⚙"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level" type="Label" parent="research_gui/research_tab/research/automatic_bread" unique_id=763333742]
+texture_filter = 1
+offset_left = 583.0
+offset_top = 530.0
+offset_right = 700.0
+offset_bottom = 567.0
+tooltip_text = "A quantidade de recursos básicos,
+como farinha e ovos que você
+pode armazenar no máximo."
+mouse_filter = 1
+mouse_default_cursor_shape = 16
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "um a cada 3
+segundos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="locked" type="TextureButton" parent="research_gui/research_tab/research/automatic_bread" unique_id=2067974910]
+offset_left = 580.0
+offset_top = 436.0
+offset_right = 700.0
+offset_bottom = 562.13635
+tooltip_text = "Requisitos:
+- 📦Capacidade Básica: >=30"
+mouse_default_cursor_shape = 16
+texture_normal = ExtResource("14_e70ty")
+texture_pressed = ExtResource("15_u6mgh")
+texture_hover = ExtResource("16_vbd5i")
+stretch_mode = 0
+script = ExtResource("17_vbd5i")
+
+[node name="skill_tree" type="Camera2D" parent="research_gui/research_tab/research" unique_id=1341410905]
+position = Vector2(3620, 4274)
+anchor_mode = 0
+enabled = false
+limit_left = 0
+limit_top = 720
+limit_smoothed = true
+position_smoothing_enabled = true
 
 [node name="icons" type="BoxContainer" parent="." unique_id=1687555644]
 z_as_relative = false
@@ -1418,25 +1739,6 @@ texture_disabled = ExtResource("34_a60p4")
 stretch_mode = 0
 script = ExtResource("17_vbd5i")
 
-[node name="close_shop_frame" type="Sprite2D" parent="icons/shop" unique_id=1053539725]
-visible = false
-top_level = true
-position = Vector2(1250, 30)
-scale = Vector2(0.234375, 0.234375)
-texture = ExtResource("40_5iyhx")
-
-[node name="close_shop" type="TextureButton" parent="icons/shop/close_shop_frame" unique_id=383862950]
-top_level = true
-z_index = 8
-offset_left = 1223.0
-offset_top = 3.0
-offset_right = 1277.0
-offset_bottom = 57.0
-texture_normal = ExtResource("12_str5a")
-texture_pressed = ExtResource("13_04pg3")
-texture_hover = ExtResource("14_2hlvw")
-stretch_mode = 0
-
 [node name="research" type="Node2D" parent="icons" unique_id=1509401364]
 
 [node name="open_research_frame" type="Sprite2D" parent="icons/research" unique_id=1225407533]
@@ -1461,14 +1763,36 @@ stretch_mode = 0
 script = ExtResource("17_vbd5i")
 metadata/_edit_use_anchors_ = true
 
-[node name="close_research_frame" type="Sprite2D" parent="icons/research" unique_id=1106028160]
+[node name="canvas" type="CanvasLayer" parent="icons" unique_id=1836756882]
+
+[node name="close_shop_frame" type="Sprite2D" parent="icons/canvas" unique_id=1053539725]
 visible = false
 top_level = true
 position = Vector2(1250, 30)
 scale = Vector2(0.234375, 0.234375)
 texture = ExtResource("40_5iyhx")
 
-[node name="close_research" type="TextureButton" parent="icons/research/close_research_frame" unique_id=416929899]
+[node name="close_shop" type="TextureButton" parent="icons/canvas/close_shop_frame" unique_id=383862950]
+top_level = true
+z_index = 8
+offset_left = 1223.0
+offset_top = 3.0
+offset_right = 1277.0
+offset_bottom = 57.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_str5a")
+texture_pressed = ExtResource("13_04pg3")
+texture_hover = ExtResource("14_2hlvw")
+stretch_mode = 0
+
+[node name="close_research_frame" type="Sprite2D" parent="icons/canvas" unique_id=1106028160]
+visible = false
+top_level = true
+position = Vector2(1250, 30)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("40_5iyhx")
+
+[node name="close_research" type="TextureButton" parent="icons/canvas/close_research_frame" unique_id=416929899]
 top_level = true
 z_index = 8
 offset_left = 1223.0
@@ -1504,7 +1828,7 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 45
-text = "R$0.0"
+text = "💲 R$0.0 💲"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("6_a6fov")
@@ -1585,7 +1909,7 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_outline_size = 2
 theme_override_font_sizes/font_size = 40
 text = "Você precisa de pelo menos
-R$10 para abrir as pesquisas!"
+R$5 para abrir as pesquisas!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1667,22 +1991,32 @@ button_pressed = true
 text = "sfx"
 script = ExtResource("56_4aqxy")
 
+[node name="main_camera" type="Camera2D" parent="." unique_id=923251262]
+anchor_mode = 0
+
 [connection signal="button_up" from="collectors_tab/resources/wheat/collect" to="collectors_tab/resources/wheat" method="_on_collect_button_up"]
+[connection signal="button_up" from="collectors_tab/resources/egg/collect" to="collectors_tab/resources/egg" method="_on_collect_button_up"]
+[connection signal="button_up" from="collectors_tab/resources/egg/locked" to="collectors_tab/resources/egg/locked" method="_on_button_up"]
 [connection signal="button_up" from="collectors_tab/bakery/bread/collect" to="collectors_tab/bakery/bread" method="_on_collect_button_up"]
+[connection signal="timeout" from="collectors_tab/bakery/bread/timer" to="collectors_tab/bakery/bread" method="_on_timer_timeout"]
 [connection signal="button_up" from="collectors_tab/bakery/brioche/collect" to="collectors_tab/bakery/brioche" method="_on_collect_button_up"]
 [connection signal="button_up" from="collectors_tab/bakery/brioche/locked" to="collectors_tab/bakery/brioche/locked" method="_on_button_up"]
 [connection signal="button_up" from="shop_gui/shop_tab/sell/sell_bread/sell_button" to="shop_gui/shop_tab/sell/sell_bread" method="_on_sell_button_button_up"]
-[connection signal="button_up" from="research_gui/research_tab/research/power/upgrade" to="research_gui/research_tab/research/power" method="_on_upgrade_button_up"]
-[connection signal="button_up" from="research_gui/research_tab/research/selling_speed/upgrade" to="research_gui/research_tab/research/selling_speed" method="_on_upgrade_button_up"]
-[connection signal="button_up" from="research_gui/research_tab/research/production/upgrade" to="research_gui/research_tab/research/production" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="shop_gui/shop_tab/sell/sell_brioche/sell_button" to="shop_gui/shop_tab/sell/sell_brioche" method="_on_sell_button_button_up"]
 [connection signal="button_up" from="research_gui/research_tab/research/artesanal_bread/upgrade" to="research_gui/research_tab/research/artesanal_bread" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/power_1/upgrade" to="research_gui/research_tab/research/power_1" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/capacity_1/upgrade" to="research_gui/research_tab/research/capacity_1" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/capacity_2/upgrade" to="research_gui/research_tab/research/capacity_2" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/capacity_2/locked" to="research_gui/research_tab/research/capacity_2/locked" method="_on_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/automatic_bread/upgrade" to="research_gui/research_tab/research/automatic_bread" method="_on_upgrade_button_up"]
+[connection signal="button_up" from="research_gui/research_tab/research/automatic_bread/locked" to="research_gui/research_tab/research/automatic_bread/locked" method="_on_button_up"]
 [connection signal="button_up" from="icons/shop/open_shop_frame/open_shop" to="." method="_on_open_shop_button_up"]
-[connection signal="button_up" from="icons/shop/close_shop_frame/close_shop" to="." method="_on_close_shop_button_up"]
 [connection signal="button_up" from="icons/research/open_research_frame/open_research" to="." method="_on_open_research_button_up"]
-[connection signal="button_up" from="icons/research/close_research_frame/close_research" to="." method="_on_close_research_button_up"]
+[connection signal="button_up" from="icons/canvas/close_shop_frame/close_shop" to="." method="_on_close_shop_button_up"]
+[connection signal="button_up" from="icons/canvas/close_research_frame/close_research" to="." method="_on_close_research_button_up"]
 [connection signal="animation_finished" from="money/money_anim" to="money" method="_on_money_anim_animation_finished"]
 [connection signal="animation_finished" from="warnings/warning_anim" to="." method="_on_warning_anim_animation_finished"]
-[connection signal="animation_finished" from="gui_anim" to="." method="_on_shop_anim_animation_finished"]
+[connection signal="animation_finished" from="gui_anim" to="." method="_on_anim_animation_finished"]
 [connection signal="button_up" from="admin/upgrade" to="admin" method="_on_upgrade_button_up"]
 [connection signal="toggled" from="sound" to="sound" method="_on_toggled"]
 [connection signal="toggled" from="sfx" to="sfx" method="_on_toggled"]

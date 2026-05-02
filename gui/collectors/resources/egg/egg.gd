@@ -7,12 +7,16 @@ var pressed = false
 @onready var label = $label
 
 func _process(delta: float) -> void:
-	label.text = "📦 " + str(BaseResources.wheat_stocked) + "/" + str(PlayerStats.base_resources_capacity)
+	label.text = "📦 " + str(BaseResources.eggs_stocked) + "/" + str(PlayerStats.base_resources_capacity)
+	if PlayerStats.power >= 1.1:
+		$locked.visible = false
+		
+	
 	if pressed:
-		bar.value += (2 * PlayerStats.power)
+		bar.value += (0.5 * PlayerStats.power)
 		if bar.value == 100:
 			AudioPlayer.collector_free()
-			BaseResources.wheat_stocked += randi_range(1, PlayerStats.max_production)
+			BaseResources.eggs_stocked += randi_range(1, PlayerStats.max_production)
 			pressed = false
 			button.disabled = false
 			
@@ -22,7 +26,7 @@ func _process(delta: float) -> void:
 
 
 func _on_collect_button_up() -> void:
-	if BaseResources.wheat_stocked < PlayerStats.base_resources_capacity:
+	if BaseResources.eggs_stocked < PlayerStats.base_resources_capacity:
 		AudioPlayer.collector_clicked()
 		pressed = true
 		button.disabled = true

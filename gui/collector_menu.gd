@@ -5,12 +5,12 @@ var fullscreen = false
 ## Shop
 @onready var shop_button = $icons/shop/open_shop_frame/open_shop
 @onready var open_shop = $icons/shop/open_shop_frame
-@onready var close_shop = $icons/shop/close_shop_frame
+@onready var close_shop = $icons/canvas/close_shop_frame
 
 ## Research
 @onready var research_button = $icons/research/open_research_frame/open_research
 @onready var open_research = $icons/research/open_research_frame
-@onready var close_research = $icons/research/close_research_frame
+@onready var close_research = $icons/canvas/close_research_frame
 
 ## Animations
 @onready var gui_anim = $gui_anim
@@ -27,6 +27,11 @@ func _process(delta: float) -> void:
 	elif Input.is_action_just_pressed("fullscreen_toggle") and fullscreen:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 		fullscreen = false
+	
+	if Input.is_action_just_pressed("open_shop"):
+		_on_open_shop_button_up()
+	if Input.is_action_just_pressed("open_research"):
+		_on_open_research_button_up()
 
 func _on_open_shop_button_up() -> void:
 	var items = [Products.bread_stocked, Products.brioche_stocked]
@@ -48,7 +53,7 @@ func _on_close_shop_button_up() -> void:
 
 func _on_open_research_button_up() -> void:
 	var money = PlayerStats.money
-	if money >= 10:
+	if money >= 5:
 		open_research.visible = false
 		gui_anim.play("open_research")
 		AudioPlayer.open_gui()
@@ -62,8 +67,11 @@ func _on_close_research_button_up() -> void:
 	AudioPlayer.close_gui()
 	close_research.visible = false
 	gui_anim.play("close_research")
+	$main_camera.enabled = true
+	$research_gui/research_tab/research/skill_tree.enabled = false
+	GuiHandler.in_skilltree = false
 
-func _on_shop_anim_animation_finished(anim_name: StringName) -> void:
+func _on_anim_animation_finished(anim_name: StringName) -> void:
 	## Shop
 	if anim_name == "open_shop":
 		close_shop.visible = true
@@ -74,6 +82,9 @@ func _on_shop_anim_animation_finished(anim_name: StringName) -> void:
 	## Research
 	if anim_name == "open_research":
 		close_research.visible = true
+		$main_camera.enabled = false
+		$research_gui/research_tab/research/skill_tree.enabled = true
+		GuiHandler.in_skilltree = true
 	if anim_name == "close_research":
 		close_research.visible = false
 		open_research.visible = true

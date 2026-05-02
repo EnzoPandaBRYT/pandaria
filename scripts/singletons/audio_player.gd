@@ -6,6 +6,7 @@ var ost_player = AudioStreamPlayer.new()
 # Main Theme
 const main_theme_intro = preload("res://audios/ost/collector_intro.mp3")
 const main_theme_mid = preload("res://audios/ost/collector_mid.mp3")
+const _main_theme = preload("res://audios/ost/Bakery.mp3")
 
 ## SFX
 # Collectors Effects
@@ -38,9 +39,7 @@ func _play_music(music: AudioStream, volume = -9.0, actualTime = 0.0):
 
 ## Music
 func main_theme():
-	_play_music(main_theme_intro)
-	await ost_player.finished
-	_play_music(main_theme_mid)
+	_play_music(_main_theme)
 
 #------------------------------
 func play_FX(stream: AudioStream, volume = 0.0, pitch = 1.0):

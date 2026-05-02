@@ -13,5 +13,4 @@ func _process(delta):
 
 
 func _on_button_up() -> void:
-	$"../locker".play("locked")
 	AudioPlayer.not_allowed()
